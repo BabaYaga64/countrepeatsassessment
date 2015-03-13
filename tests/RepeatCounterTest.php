@@ -13,6 +13,7 @@
 			$input1 = "a";
 			$input2 = "a";
 
+
 			//Act
 			$result = $test_RepeatCounter->CountRepeats($input1, $input2);
 
@@ -66,6 +67,21 @@
 			$this->assertEquals(1, $result);
 
 		}//Ends test_1letter_2charstringmismatch
+
+		function test_2letter_2charstring() {
+
+			//Arrange
+			$test_RepeatCounter = new RepeatCounter;
+			$input1 = "at";
+			$input2 = "ta";
+
+			//Act
+			$result = $test_RepeatCounter->CountRepeats($input1, $input2);
+
+			//Assert
+			$this->assertEquals(1, $result);
+
+		}//Ends test_2letter_2charstring
 
 
 
