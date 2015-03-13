@@ -1,28 +1,73 @@
-Test 1
+Count Word Repeats
+
+TEST 1
+
+Description: This test will check for a one letter word in a one letter string, and calculate frequency of the input word. 
+
+Input: word: "a", string "a"
+Output: 1
+
+
+TEST 1.5 
+
+Description: This test will check for a one letter word in a one letter string that does not contain the word, and return a result of zero. 
+
+Input: word: "a", string "b"
+Output: 0
+
+TEST 2
+
+Description: This test will check for a one letter word in a two letter string of different letters and calculate frequency of the input word.
+
+Input: word: "a", string "at"
+Output: 1
+
+
+TEST 3
+
+Description: This test will check for a one letter word in a two letter string of same letters and calculate frequency of the input word. 
+Input: word "a", string "aa"
+Output: 2
+
+
+TEST 4
+
+Description: This test will check for a two letter word in a string of two different letters and calculate frequency of the input word. 
+Input: word "at", string "at"
+Output: 1
+
+
+TEST 5
 
 Description:
 Input:
 Output:
 
-Test 2
+TEST 6
 
 Description:
 Input:
 Output:
 
-Test 3
+TEST 7
 
 Description:
 Input:
 Output:
 
-Test 4
+TEST 8
 
 Description:
 Input:
 Output:
 
-Test 5
+TEST 9
+
+Description:
+Input:
+Output:
+
+TEST 10
 
 Description:
 Input:
