@@ -5,10 +5,11 @@
 	class RepeatCounterTest extends PHPUnit_Framework_TestCase
 	{
 
-		function test_1letter_1char {
+		function test_1letter_1char()
+		{
 
 			//Arrange
-			$test_1letter_1char = new RepeatCounter;
+			$test_RepeatCounter = new RepeatCounter;
 			$input1 = "a";
 			$input2 = "a";
 
@@ -20,21 +21,26 @@
 
 		}//Ends test_1letter_1char
 
-		// function test_1letter_1char {
+		function test_1letter_1charmismatch() {
 
-		// 	//Arrange
-		// 	$test_1letter_1char = new RepeatCounter;
-		// 	$input1 = "a";
-		// 	$input2 = "a";
+		//Arrange
+		$test_RepeatCounter = new RepeatCounter;
+		$input1 = "a";
+		$input2 = "b";
 
-		// 	//Act
-		// 	$result = $test_RepeatCounter->CountRepeats($input1, $input2);
+		//Act
+		$result = $test_RepeatCounter->CountRepeats($input1, $input2);
 
-		// 	//Assert
-		// 	$this->assertEquals(1, $result);
+		//Assert
+		$this->assertEquals(0, $result);
 
-		// }//Ends test_1letter_1char
+		}//Ends test_1letter_1charmismatch
 
-	}//Ends class
+
+		
+
+
+
+	}//Ends class RepeatCounterTest
 
 ?>

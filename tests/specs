@@ -2,14 +2,14 @@ Count Word Repeats
 
 TEST 1 - 1 letter word, 1 char string
 
-Description: This test will check for a one letter word in a one letter string, and calculate frequency of the input word. 
+Description: This test will check for a one letter word in a one letter string, and calculate frequency of the input word.
 Input: word: "a", string "a"
 Output: 1
 
 
 TEST 1.5 - 1 letter word, 1 char mismatched string
 
-Description: This test will check for a one letter word in a one letter string that does not contain the word, and return a result of zero. 
+Description: This test will check for a one letter word in a one letter string that does not contain the word, and return a result of zero.
 Input: word: "a", string "b"
 Output: 0
 
@@ -23,19 +23,19 @@ Output: 1
 
 TEST 3 - 1 letter word, 2 char string with repeating letter
 
-Description: This test will check for a one letter word in a two letter string of same letters and calculate frequency of the input word. 
+Description: This test will check for a one letter word in a two letter string of same letters and calculate frequency of the input word.
 Input: word "a", string "aa"
 Output: 2
 
 
 TEST 4 - 1 letter word, 2 char string w/ diff letters
 
-Description: This test will check for a two letter word in a string of two different letters and calculate frequency of the input word. 
+Description: This test will check for a two letter word in a string of two different letters and calculate frequency of the input word.
 Input: word "at", string "at"
 Output: 1
 
 TEST 4.5 - 2 letter word, 3 char string w/ blank space
-Description: This test will check for a two letter word in a three character string that has a space between the letters. The test will ignore the blank space and find the word in the string. 
+Description: This test will check for a two letter word in a three character string that has a space between the letters. The test will ignore the blank space and find the word in the string.
 Input: word "at", string "a t"
 Output: 1
 
@@ -49,13 +49,13 @@ Output: 0
 TEST 6 - 3 letter word, 6 char string
 
 Description: This test will check a three letter word in a string of six characters.
-Input: word 
+Input: word
 "ate", string "afreqt"
 Output: 1
 
 TEST 7 - 3 letter word, 6 char string w/ 2 occurences of word
 
-Description: This test will check a three letter word in a string of six characters that contains the input word a total of two times. 
+Description: This test will check a three letter word in a string of six characters that contains the input word a total of two times.
 Input: word "ate", string "tateae"
 Output: 2
 
@@ -76,4 +76,3 @@ TEST 10
 Description:
 Input:
 Output:
-
