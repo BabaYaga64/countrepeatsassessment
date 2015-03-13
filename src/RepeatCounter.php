@@ -5,6 +5,7 @@
 
 		function CountRepeats($input_word, $string)
 		{
+			
 
 		}//Ends CountRepeats
 
