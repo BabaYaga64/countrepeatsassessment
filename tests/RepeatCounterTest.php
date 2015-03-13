@@ -37,7 +37,7 @@
 		}//Ends test_1letter_1charmismatch
 
 
-		function test_1letter_2charmstring() {
+		function test_1letter_2charstring() {
 
 			//Arrange
 			$test_RepeatCounter = new RepeatCounter;
@@ -51,6 +51,21 @@
 			$this->assertEquals(2, $result);
 
 		}//Ends test_1letter_1charmismatch
+
+		function test_1letter_2charstringmismatch() {
+
+			//Arrange
+			$test_RepeatCounter = new RepeatCounter;
+			$input1 = "a";
+			$input2 = "ba";
+
+			//Act
+			$result = $test_RepeatCounter->CountRepeats($input1, $input2);
+
+			//Assert
+			$this->assertEquals(1, $result);
+
+		}//Ends test_1letter_2charstringmismatch
 
 
 

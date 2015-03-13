@@ -7,29 +7,22 @@
 		{
 			$frequency = 0;
 
-			$array_of_input_words = array();
-			$array_of_input_string = str_split($input_word);
+			// if ($input_word == $string) {
+			// 	return 1;
+			// if ($input_word != $string)
+			// 	return 0;
+			// }
 
-			foreach ($array_of_input_string as $letter)
-				if(in_array($letter, $array_of_input_words)) {
-					$frequency += 1;
+			$array_of_words = explode(" ", $input_word);
+
+			foreach ($array_of_words as $word) {
+				if ($word == $string) {
+					$frequency = $frequency + 1;
 				}
+			}
 
-
-			// foreach()
-
-				if ($input_word == $string) {
-					return 1;
-				if ($input_word != $string)
-					return 0;
-
-				}//Ends if statement
-
-
-
-		return $frequency;
-
-		}//Ends CountRepeats
+				return $frequency;
+		 }//Ends CountRepeats
 
 	} //Ends class
 
