@@ -3,9 +3,18 @@
 
     $app = new Silex\Application();
 
-    $app->get("/hello", function() {
-        return "Hello friend!";
+    $app->register(new Silex\Provider\TwigServiceProvider(), array(
+    'twig.path' => __DIR__.'/../views'
+));
+
+    $app['debug'] = true;
+
+
+    $app->get("/", function() use ($app) {
+
+
+
     });
 
-    return $app;
+    return $app['twig']->render('inputform.twig');
 ?>
