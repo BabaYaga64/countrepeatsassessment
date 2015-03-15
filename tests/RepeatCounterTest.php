@@ -10,28 +10,30 @@
 
 			//Arrange
 			$test_RepeatCounter = new RepeatCounter;
-			$input1 = "a";
-			$input2 = "a";
+			$input_word = "a";
+			$input_string = "a";
 
 
 			//Act
-			$result = $test_RepeatCounter->CountRepeats($input1, $input2);
+			$result = $test_RepeatCounter->CountRepeats($input_word, $input_string);
 
 			//Assert
-			$this->assertEquals(0, $result);
+			$this->assertEquals(1, $result);
 
 		}//Ends test_1letter_1char
 
-		function test_1letter_1charstringmismatch() {
+
+		function test_1letter_1charstringmismatch() 
+		{
 
 			//Arrange
 			$test_RepeatCounter = new RepeatCounter;
-			$input1 = "a";
-			$input2 = "b";
+			$input_word = "a";
+			$input_string = "b";
 
 
 			//Act
-			$result = $test_RepeatCounter->CountRepeats($input1, $input2);
+			$result = $test_RepeatCounter->CountRepeats($input_word, $input_string);
 
 			//Assert
 			$this->assertEquals(0, $result);
@@ -39,46 +41,51 @@
 		}//Ends test_1letter_1charmismatch
 
 
-		function test_1letter_2charstring() {
+		function test_1letter_2charstring() 
+		{
 
 			//Arrange
 			$test_RepeatCounter = new RepeatCounter;
-			$input1 = "a";
-			$input2 = "aa";
+			$input_word = "a";
+			$input_string = "aa";
 
 
 			//Act
-			$result = $test_RepeatCounter->CountRepeats($input1, $input2);
+			$result = $test_RepeatCounter->CountRepeats($input_word, $input_string);
 
 			//Assert
 			$this->assertEquals(2, $result);
 
 		}//Ends test_1letter_2charstring
 
-		function test_1letter_2charstringmismatch() {
+
+		function test_1letter_2charstringmismatch() 
+		{
 
 			//Arrange
 			$test_RepeatCounter = new RepeatCounter;
-			$input1 = "a";
-			$input2 = "ba";
+			$input_word = "a";
+			$input_string = "ba";
 
 			//Act
-			$result = $test_RepeatCounter->CountRepeats($input1, $input2);
+			$result = $test_RepeatCounter->CountRepeats($input_word, $input_string);
 
 			//Assert
 			$this->assertEquals(1, $result);
 
 		}//Ends test_1letter_2charstringmismatch
 
-		function test_2letter_2charstring() {
+
+		function test_2letter_2charstring() 
+		{
 
 			//Arrange
 			$test_RepeatCounter = new RepeatCounter;
-			$input1 = "at";
-			$input2 = "ta";
+			$input_word = "at";
+			$input_string = "ta";
 
 			//Act
-			$result = $test_RepeatCounter->CountRepeats($input1, $input2);
+			$result = $test_RepeatCounter->CountRepeats($input_word, $input_string);
 
 			//Assert
 			$this->assertEquals(1, $result);

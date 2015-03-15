@@ -20,7 +20,7 @@
 
     $app->post("/inputform", function()  use ($app) {
         $word = new RepeatCounter($_POST['input_word']);
-        $task->save();
+        $word->save();
 
         return $app['twig']->render('inputform.twig');
 
