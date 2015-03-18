@@ -14,22 +14,22 @@ Input: word: "a", string "b"
 Output: 0
 
 
--TEST 3 - 1 letter word, 2 char string
+-TEST 3 - 1 letter word, 3 char string
 
-Description: This test will check for a one letter word in a two letter string of different letters and calculate frequency of the input word.
-Input: word: "a", string "at"
+Description: This test will check for a one letter word in a three character string and calculate frequency of the input word.
+Input: word: "a", string "a b"
 Output: 1
 
 
--TEST 4 - 1 letter word, 2 char string with repeating letter
+-TEST 4 - 2 letter word, 2 char string with repeating letter
 
 Description: This test will check for a one letter word in a two letter string of same letters and calculate frequency of the input word.
 Input: word "a", string "aa"
+Output: 0
+
+
+-TEST 5 - 2 letter word, 5 char string 
+
+Description: This test will check for a two letter word in a string of 5 characters and calculate frequency of the input word.
+Input: word "at", string "at at"
 Output: 2
-
-
--TEST 5 - 1 letter word, 2 char string w/ diff letters
-
-Description: This test will check for a two letter word in a string of two different letters and calculate frequency of the input word.
-Input: word "at", string "ta"
-Output: 1

@@ -1,0 +1,15 @@
+
+
+You are on the right track. I'm glad to see you started with your specs, and your commit history looks great. Your first 2 specs are bang on, that is an excellent way to start this problem. Can't think of any simpler input/output than that, and your tests are very organized and clear.
+
+However, specs 3 and 4 are not following the instructions. Always remember to read the problem carefully and understand the main goal before you begin. We are matching words, not character strings within words. It's great to start with a single character word, like searching for 'a' in 'a', but when we search for 'a' in 'at', we should get 0 matches. 'a' is not the same word as 'at', even though it contains 'a'. You actually made the problem way more difficult than you needed to, don't give yourself extra work :)
+
+Another thing to work on when you resubmit is that your input/output values in your plain english tests do not match the input/output values in your test methods. The english specs are there to help you - you should try to decide on appropriate input/output there and then stick to your plan when writing your test methods, and do them one at a time.
+
+The next issue is that you started your silex app without finishing your CountRepeats method. All your tests should pass before you start building your app. This way you can be certain that any problems you encounter have to do with Silex - not your class. Now you are running into a tricky error and you don't have any way to know if it's something in your class, or something in your app file.
+
+So, don't fret, you started off great. To complete the project, rewrite your tests to reflect the problem, then make your tests pass. After that, when it's time to get back to Silex, here's a hint: Look at your app.php file. It is missing an ingredient at the bottom. There are other things to fix besides that, but start there. Look at your other app.php files in other projects for comparison.
+
+Last tip: try to be aware of using more descriptive variable names. It will help you keep track of what your code is doing at any one line. Your variables should almost make your code read like a sentence ideally. For example, naming your input field "string" could mean a lot of things. Calling it "searchstring" or something like that, or even "inputtosearchin" - seriously, long variable names are fine. It may seem picky, but it is going to help you to debug things a lot easier and it will make your logic a lot clearer.
+
+You can do it! If you're still stuck after resubmitting we'll go over it together at lunch sometime.
