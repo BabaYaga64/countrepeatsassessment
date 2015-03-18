@@ -18,14 +18,12 @@
 				if ($word == $word_to_search_for) {
 					$frequency += 1;
 
+				} elseif ($word_to_search_for == null)
+					return 0; 
 				}
-
-				elseif ($word_to_search_for == null)
-					return 0;
-			}
 				return $frequency;
 
-		 }//Ends CountRepeats
+		}//Ends CountRepeats
 
 	} //Ends class
 
