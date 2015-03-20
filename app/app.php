@@ -19,13 +19,14 @@
 
 
     $app->post("/view_frequency", function()  use ($app) {
-        $my_repeat_counter = new RepeatCounter;
-
-        $word_frequency->save();
-
-        return $app['twig']->render('displayfrequency.twig', array('array_of_words' => $word));
+        $repeat_counter = new RepeatCounter;
+        $input_word = $_POST['input_word'];
+        $input_string = $_POST['input_string'];
+        $word_frequency = $repeat_counter->CountRepeats($input_word, $input_string);
+        return $app['twig']->render('displayfrequency.twig', array('input_word' => $word_to_search_for, 'input_string' => $string_to_search_in, 'frequency' => $frequency));
 
     });
+
 
     return $app;
 
