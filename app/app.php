@@ -18,12 +18,23 @@
     });
 
 
-    $app->post("/view_frequency", function()  use ($app) {
-        $repeat_counter = new RepeatCounter;
-        $input_word = $_POST['input_word'];
-        $input_string = $_POST['input_string'];
-        $word_frequency = $repeat_counter->CountRepeats($input_word, $input_string);
-        return $app['twig']->render('displayfrequency.twig', array('input_word' => $word_to_search_for, 'input_string' => $string_to_search_in, 'frequency' => $frequency));
+    $app->get("/view_frequency", function()  use ($app) {
+        $view_frequency = new RepeatCounter;
+        $result = $view_frequency->CountRepeats($_GET['input_word'], $_GET['input_string']);
+
+        return $app['twig']->render('displayfrequency.twig', array('frequency' => $result));
+
+    });
+
+
+    $app->post("/view_frequency", function () use ($app) {
+        $word_to_search_for = $_POST['input_word'];
+        $string_to_search_in = $_POST['input_string'];
+
+        $new_frequency = new RepeatCounter;
+        $result = $new_frequency->CountRepeats($word_to_search_for, $string_to_search_in);
+
+        return $app['twig']->render('displayfrequency.twig', array('result' => $result));
 
     });
 
