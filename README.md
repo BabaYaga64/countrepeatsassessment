@@ -10,18 +10,18 @@ This app takes two user inputs: a word that they are searching for, and a string
 
 ###Technologies Used:
 
-PHP
-PHPUnit
-HTML5
-PHP server
-Silex
-Composer
-Twig
+* PHP
+* PHPUnit
+* HTML5
+* PHP server
+* Silex
+* Composer
+* Twig
 
 ###Setup Instructions
 
 Clone GitHub repository to your local machine.
-Run MAMP or other PHP server.
+Start up your PHP server.
 Direct browser to root directory file.
 
 ###The MIT License (MIT)
